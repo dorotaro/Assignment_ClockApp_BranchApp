@@ -1,5 +1,4 @@
-﻿using System;
-using static ClockApp.ClockCalculator;
+﻿using static ClockApp.ClockCalculator;
 
 namespace ClockApp
 {
@@ -8,7 +7,6 @@ namespace ClockApp
         public static void Main(string[] args)
         {
             bool stop = false;
-            int hoursArrow;
 
             while (stop == false)
             {
@@ -29,15 +27,15 @@ namespace ClockApp
 
                 var inputMinutes = int.Parse(input2);
 
-                if (inputMinutes < 0 || inputHours > 59) throw new ArgumentOutOfRangeException("input", "Please enter a valid number of hours, range: 0 - 59");
+                if (inputMinutes < 0 || inputMinutes > 59) throw new ArgumentOutOfRangeException("input", "Please enter a valid number of hours, range: 0 - 59");
 
 
                 var result = CalculateAngle(inputHours, inputMinutes);
 
                 Console.WriteLine();
-                Console.WriteLine($"The angle between {inputHours} hour arrow and {inputMinutes} minute arrow is: {result} degrees");
+                Console.WriteLine($"The angle between hour arrow, that is pointing at {inputHours}, and minute arrow, that indicates {inputMinutes}, is: {result} degrees");
 
-                Console.WriteLine("If you wish to start over once again, enter 'Y' ");
+                Console.WriteLine("If you wish to start over once again, enter 'Y' or 'y' ");
                 Console.WriteLine("If you wish to end, enter 'N' ");
 
                 var input3 = Console.ReadLine();
