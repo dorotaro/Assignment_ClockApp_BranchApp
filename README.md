@@ -10,18 +10,23 @@
   
   2 BranchApp:
   
-    Imagine we have a hierarchical structure:
+  Imagine we have a hierarchical structure:
     
       class Branch
       {
         List<Branch> branches;
       }
       
-    After creating this object, we can add new Branch type objects into branches
-    variable. Doing so we increase object depth by one. Into created objects we can
-    add again new branches etc. In the figure below we have similar structure. This
-    structure depth is 5.
+  After creating this object, we can add new Branch type objects into branches
+  variable. Doing so we increase object depth by one. Into created objects we can
+  add again new branches etc. In the figure below we have similar structure. This
+  structure depth is 5.
     
-    Please write a program, where you would create similar structure. Pass this structure into your own
-    created method and calculate the depth of provided structure. Main requirement to complete this
-    task: use recursion.
+  Please write a program, where you would create similar structure. Pass this structure into your own
+  created method and calculate the depth of provided structure. Main requirement to complete this
+  task: use recursion.
+  
+      <img width="228" alt="image" src="https://user-images.githubusercontent.com/93161662/152039254-12bfe10a-c861-4bd5-ae52-2a72da21a750.png">
+  
+  
+
