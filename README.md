@@ -1,14 +1,14 @@
-2 TASKS:
+<h1> 2 TASKS: </h1>
 
-1 ClockApp:
+<h3> 1 ClockApp: </h3>
   
   Please write console app. User should be able to input hours and minutes of the analogue clock.
   Program must calculate lesser angle in degrees between hours arrow and minutes arrow and provide
   output in the console window.
   
   
-  
-  2 BranchApp:
+ <br>
+ <h3> 2 BranchApp: </h3>
   
   Imagine we have a hierarchical structure:
     
